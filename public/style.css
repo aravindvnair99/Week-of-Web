@@ -6,7 +6,8 @@ body {
 }
 .container {
   width: 600px;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 20px;
   text-align: center;
   backdrop-filter: blur(10px) brightness(0.7);
   border: 1px solid grey;
@@ -52,7 +53,7 @@ form {
   border-bottom: 1px solid white;
 }
 
-input-task::-webkit-input-placeholder {
+#input-task::-webkit-input-placeholder {
   color: white;
 }
 
