@@ -1,5 +1,6 @@
 body {
-  background: url("./background.jpg") no-repeat center center fixed;
+  transition: 0.5s;
+  background: url("./img/background1.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
   font-family: cursive;
@@ -68,4 +69,31 @@ form {
 
 *:focus {
   outline: none;
+}
+
+#background-selector {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+}
+
+.background {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid grey;
+  cursor: pointer;
+}
+
+#bg1 {
+  background-color: #046724;
+}
+#bg2 {
+  background-color: #c7b087;
+}
+#bg3 {
+  background-color: #c4222a;
+}
+#bg4 {
+  background-color: #b1c2cc;
 }
