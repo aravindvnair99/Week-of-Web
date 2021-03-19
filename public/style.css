@@ -39,7 +39,7 @@ body {
   width: 5%;
 }
 
-form {
+#task-input-form {
   box-sizing: border-box;
   height: 30px;
   margin: 5px 0;
@@ -100,4 +100,12 @@ form {
 }
 #bg4 {
   background-color: #b1c2cc;
+}
+
+.delete-submit {
+  background: none;
+  border: none;
+  color: white;
+  font-family: cursive;
+  cursor: pointer;
 }
