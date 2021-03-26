@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do list</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Things To Do</h1>
+      <form action="/create" method="POST" id="task-input-form">
+        <input
+          type="text"
+          id="input-task"
+          name="task"
+          placeholder="Add a Task"
+        />
+        <input type="submit" id="submit" value="Add" />
+      </form>
+      <ul id="tasks">
+        <% tasklist.forEach(task => { %>
+        <li class="task">
+          <span class="task-text"><%=task.text %></span>
+          <form action="/delete" method="post" style="display: inline-block">
+            <input type="hidden" name="deleteid" value="<%= task.id %>" />
+            <span class="task-delete">
+              <input type="submit" class="delete-submit" value="&cross;" />
+            </span>
+          </form>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+    <div id="background-selector">
+      <span class="background" id="bg1"></span>
+      <span class="background" id="bg2"></span>
+      <span class="background" id="bg3"></span>
+      <span class="background" id="bg4"></span>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
