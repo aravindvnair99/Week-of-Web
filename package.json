@@ -1,18 +1,18 @@
 {
-  "name": "Week-of-Web",
+  "name": "week-of-web",
   "version": "1.0.0",
   "description": "This repository stores all the code discussed during Week of Web Series.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VinayakTekade/Week-of-Web.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Vinayak Tekade",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/VinayakTekade/Week-of-Web/issues"
   },
